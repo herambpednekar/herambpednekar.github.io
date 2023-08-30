@@ -1,0 +1,206 @@
+/* Add styles for the entire page */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Add styles for the header */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f7c08a;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Add styles for the hero section */
+.hero {
+  background: url('vice.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+  color: #f7c08a;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f7c08a;
+}
+
+/* Add styles for the content sections */
+.about-me, .skills {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2, .skills h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.about-me p, .skills ul {
+  margin-top: 10px;
+  color: #666;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Add styles for the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #f7c08a;
+}
+
+/* Add custom styles for links */
+a.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f7c08a;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Add custom styles for links */
+a.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f7c08a;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+a.contact-button:hover {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+/* Add styling for section headings */
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+}
+
+/* Add custom styles for the hero section */
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+/* Add styling for content section headings */
+.about-me h2, .skills h2 {
+  font-size: 30px;
+}
+
+/* Add styling for content section paragraphs */
+.about-me p, .skills ul {
+  font-size: 18px;
+}
+
+/* Add styling for the content section backgrounds */
+.about-me, .skills {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+}
+
+/* Add custom styles for project and experience items */
+.experience-item, .project-item {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.experience-item h2, .project-item h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.experience-item p, .project-item p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Add custom styles for the footer */
+footer {
+  background-color: #333;
+  color: #f7c08a;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* Add styling for navigation links on hover */
+nav a:hover {
+  color: #ff9900;
+}
+
+/* Add custom font for section headings */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+

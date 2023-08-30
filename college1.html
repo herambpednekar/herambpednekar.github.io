@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Party App</title>
+</head>
+<body>
+  <header>
+    <h1>College Party App</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create an Account</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Login</h2>
+      <form>
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail" required>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+
+        <button type="submit">Log In</button>
+      </form>
+    </section>
+
+    <section id="profileSection" style="display: none;">
+      <h2>User Profile</h2>
+      <p id="profileName"></p>
+      <p id="profileAge"></p>
+      <p id="profileCollege"></p>
+    </section>
+
+    <section id="chatSection" style="display: none;">
+      <h2>Chat</h2>
+      <div id="chatMessages"></div>
+      <form>
+        <input type="text" id="messageInput" required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 College Party App. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mock user data
+    const currentUser = {
+      name: "John Doe",
+      age: 20,
+      college: "XYZ College"
+    };
+
+    // Update profile section with user data
+    const profileSection = document.getElementById("profileSection");
+    const profileName = document.getElementById("profileName");
+    const profileAge = document.getElementById("profileAge");
+    const profileCollege = document.getElementById("profileCollege");
+
+    profileName.textContent = `Name: ${currentUser.name}`;
+    profileAge.textContent = `Age: ${currentUser.age}`;
+    profileCollege.textContent = `College: ${currentUser.college}`;
+
+    // Show profile section after login
+    const loginForm = document.querySelector('form[name="loginForm"]');
+    loginForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      // Perform login and validation
+      // ...
+
+      // If login successful, show profile section
+      profileSection.style.display = "block";
+    });
+
+    // Chat functionality
+    const chatSection = document.getElementById("chatSection");
+    const chatMessages = document.getElementById("chatMessages");
+    const messageInput = document.getElementById("messageInput");
+
+    // Function to add a new chat message
+    function addMessage(message) {
+      const newMessage = document.createElement("p");
+      newMessage.textContent = message;
+      chatMessages.appendChild(newMessage);
+    }
+
+    // Mock chat messages
+    const mockChatMessages = [
+      "Hello!",
+      "How's everyone doing?",
+      "Let's plan a party this weekend!",
+      "I heard there's a cool event happening on campus.",
+    ];
+
+    // Display mock chat messages
+    mockChatMessages.forEach((message) => {
+      addMessage(message);
+    });
+
+    // Show chat section after login
+    loginForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Perform login and validation
+      // ...
+
+      // If login successful, show chat section
+      chatSection.style.display = "block";
+    });
+
+    // Send chat message
+    const chatForm = document.querySelector('form[name="chatForm"]');
+    chatForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const message = messageInput.value;
+      addMessage(message);
+      messageInput.value = "";
+    });
+  </script>
+</body>
+</html>

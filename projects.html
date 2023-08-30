@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Heramb Pednekar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2><a href="https://github.com/yourusername/project1">Project 1</a></h2>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project-item">
+            <h2><a href="https://github.com/yourusername/project2">Project 2</a></h2>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more project items as needed -->
+    </section>
+    <div class="project-item">
+        <h2><a href="https://github.com/yourusername/project1">Project 1</a></h2>
+        <p>Description of Project 1.</p>
+        <!-- Replace VIDEO_ID with the actual YouTube video ID -->
+        <iframe width="560" height="315" src="https://youtu.be/u3Ec34iVa_k?feature=shared" frameborder="0" allowfullscreen></iframe>
+    </div>
+        <!-- In your HTML -->
+<div class="project-item">
+    <h2><a href="javascript:void(0);" onclick="loadRandomVideo()">Project 1</a></h2>
+    <p>Description of Project 1.</p>
+</div>
+
+<!-- JavaScript function -->
+<script>
+function loadRandomVideo() {
+    // Replace VIDEO_IDS with an array of YouTube video IDs
+    const videoIds = ["VIDEO_ID_1", "VIDEO_ID_2", "VIDEO_ID_3"];
+    
+    // Generate a random index to select a video
+    const randomIndex = Math.floor(Math.random() * videoIds.length);
+    
+    // Get the selected video ID
+    const selectedVideoId = videoIds[randomIndex];
+    
+    // Replace 'video-iframe' with the ID of the iframe element
+    document.getElementById('video-iframe').src = `https://youtu.be/u3Ec34iVa_k?feature=shared${selectedVideoId}`;
+}
+</script>
+
+<!-- The iframe to display the YouTube video -->
+<iframe id="video-iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+    <section class="content">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2>Personal Website</h2>
+            <p>Designed and developed a personal website showcasing my skills and experiences.</p>
+        </div>
+        <div class="project-item">
+            <h2>Data Analysis Tool</h2>
+            <p>Created a data analysis tool using Python for processing and visualizing large datasets.</p>
+        </div>
+    </section>
+    <section class="content">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2>Personal Website</h2>
+            <p>I designed and developed my personal website from scratch. This project allowed me to showcase my web development skills and create a platform to share my experiences and achievements.</p>
+        </div>
+        <div class="project-item">
+            <h2>Data Analysis Tool</h2>
+            <p>I created a data analysis tool using Python and libraries like Pandas and Matplotlib. This tool enabled users to import, analyze, and visualize large datasets, making data-driven decisions more accessible.</p>
+        </div>
+        <div class="project-item">
+            <h2>Mobile App Prototype</h2>
+            <p>I collaborated with a team to design a prototype for a mobile app aimed at improving productivity. My role involved creating wireframes, user interfaces, and conducting usability tests.</p>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2023 Heramb Pednekar | Resume Website
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBC - Virtual Bash Creator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to VBC - Virtual Bash Creator</h1>
+    </header>
+
+    <main>
+        <section id="create-event">
+            <h2>Create an Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="event-time">Event Time:</label>
+                <input type="time" id="event-time" name="event-time" required>
+
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" rows="4" required></textarea>
+
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <!-- Display a list of upcoming events here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 VBC - Virtual Bash Creator</p>
+    </footer>
+</body>
+</html>
